@@ -1,6 +1,18 @@
 body {
-	background-color: beige;
+	background-color: #f5f5dc;
+	margin: 0;
+	font-family: "Inter", sans-serif;
 	}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 20px;
+}
+header > div {
+	margin-left: 0;
+  }
 
 button {
 	position: relative;
@@ -17,6 +29,7 @@ button {
    button.navbar {
 	font-weight: 600;
 	font-family: "Inter", sans-serif;
+	margin-left: 0;
 	color: #382b22;
 	text-transform: uppercase;
 	padding: 1.25em 2em;
@@ -81,3 +94,54 @@ button {
 	border-radius: 1.25rem;
   }
   
+
+  .container {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+  }
+  
+  .scroll {
+	white-space: nowrap;
+	margin: 0 2em;
+  }
+  
+  .scroll div {
+	display: flex;
+	gap: 2em;
+  }
+  
+  .scroll p {
+	font-size: 7em;
+	color: black;
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 10px;
+  }
+  
+  .RightToLeft {
+	animation: RightToLeft 10s infinite linear;
+  }
+  
+  @keyframes  RightToLeft {
+	from {
+	  transform: translateX(0%);
+	}
+	to {
+	  transform: translateX(-50%);
+	}
+  }
+  
+  .LeftToRight {
+	animation: LeftToRight 10s infinite linear;
+  }
+  
+  @keyframes  LeftToRight {
+	from {
+	  transform: translateX(-50%);
+	}
+	to {
+	  transform: translateX(0%);
+	}
+  }
