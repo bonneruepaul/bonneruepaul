@@ -23,7 +23,7 @@ body {
   }
   
   .scroll p {
-	font-size: 8em;
+	font-size: 9em;
 	color: #76453B;
 	font-weight: bold;
 	margin-bottom: 0%;
@@ -54,4 +54,23 @@ body {
 	to {
 	  transform: translateX(0%);
 	}
+  }
+
+  .linkedin-link {
+	position: absolute;
+	top: 11em;
+	right: -1.15em;
+	transform: translateY(-50%) rotate(-90deg) scale(1); /* Ajoute la fonction scale pour définir la taille de l'élément */
+	color: #B17566;
+	font-size: 1.75em;
+	text-decoration: none;
+	transition: transform 0.5s ease-in-out; /* Modifie la propriété transition pour inclure la transformation */
+	cursor: pointer; /* Ajoute un curseur au survol */
+	z-index: 1; /* Définit l'ordre de superposition de l'élément */
+  }
+  
+  .linkedin-link:hover {
+	transform: translateY(-50%) rotate(-90deg) scale(1.1); /* Augmente la taille de l'élément lorsqu'on hover */
+	color:#76453B;
+	font-weight: 700;
   }
